@@ -1,0 +1,975 @@
+[
+  {
+    "url": "/mapping/produces",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [
+      "application/xml"
+    ],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.MappingController",
+    "declaringMethod": "byProducesXml",
+    "startPos": 2243,
+    "endPos": 2385
+  },
+  {
+    "url": "/convert/custom",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.convert.ConvertController",
+    "declaringMethod": "customConverter",
+    "startPos": 1599,
+    "endPos": 1654
+  },
+  {
+    "url": "/mapping/consumes",
+    "consumes": [
+      "application/json"
+    ],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.MappingController",
+    "declaringMethod": "byConsumes",
+    "startPos": 1769,
+    "endPos": 1911
+  },
+  {
+    "url": "/validate",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.validation.ValidationController",
+    "declaringMethod": "validate",
+    "startPos": 460,
+    "endPos": 518
+  },
+  {
+    "url": "/response/charset/produce",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [
+      "text/plain;charset\u003dUTF-8"
+    ],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.response.ResponseController",
+    "declaringMethod": "responseProducesConditionCharset",
+    "startPos": 888,
+    "endPos": 996
+  },
+  {
+    "url": "/async/deferred-result/response-body",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.DeferredResultController",
+    "declaringMethod": "deferredResult",
+    "startPos": 984,
+    "endPos": 1079
+  },
+  {
+    "url": "/response/charset/accept",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.response.ResponseController",
+    "declaringMethod": "responseAcceptHeaderCharset",
+    "startPos": 695,
+    "endPos": 759
+  },
+  {
+    "url": "/data/standard/session",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.standard.StandardArgumentsController",
+    "declaringMethod": "session",
+    "startPos": 2321,
+    "endPos": 2392
+  },
+  {
+    "url": "/views/*/html",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.views.ViewsController",
+    "declaringMethod": "prepare",
+    "startPos": 427,
+    "endPos": 498
+  },
+  {
+    "url": "/class-mapping/*/path/*",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byPathPattern",
+    "startPos": 585,
+    "endPos": 673
+  },
+  {
+    "url": "/mapping/header",
+    "consumes": [],
+    "headers": [
+      "!FooHeader"
+    ],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.MappingController",
+    "declaringMethod": "byHeaderNegation",
+    "startPos": 1568,
+    "endPos": 1686
+  },
+  {
+    "url": "/data/path/{var}",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withPathVariable",
+    "startPos": 1131,
+    "endPos": 1222
+  },
+  {
+    "url": "/simple/revisited",
+    "consumes": [],
+    "headers": [
+      "Accept\u003dtext/plain"
+    ],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.simple.SimpleControllerRevisited",
+    "declaringMethod": "simple",
+    "startPos": 341,
+    "endPos": 468
+  },
+  {
+    "url": "/data/standard/request/reader",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.standard.StandardArgumentsController",
+    "declaringMethod": "requestReader",
+    "startPos": 1179,
+    "endPos": 1290
+  },
+  {
+    "url": "/messageconverters/xml",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.messageconverters.MessageConvertersController",
+    "declaringMethod": "writeXml",
+    "startPos": 1894,
+    "endPos": 1981
+  },
+  {
+    "url": "/messageconverters/form",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.messageconverters.MessageConvertersController",
+    "declaringMethod": "writeForm",
+    "startPos": 1319,
+    "endPos": 1428
+  },
+  {
+    "url": "/data/standard/request",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.standard.StandardArgumentsController",
+    "declaringMethod": "standardRequestArgs",
+    "startPos": 741,
+    "endPos": 844
+  },
+  {
+    "url": "/exception",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.exceptions.ExceptionController",
+    "declaringMethod": "exception",
+    "startPos": 342,
+    "endPos": 401
+  },
+  {
+    "url": "/class-mapping/*/produces",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byProduces",
+    "startPos": 1970,
+    "endPos": 2091
+  },
+  {
+    "url": "/redirect/{account}",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.redirect.RedirectController",
+    "declaringMethod": "show",
+    "startPos": 1667,
+    "endPos": 1744
+  },
+  {
+    "url": "/redirect/uriTemplate",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.redirect.RedirectController",
+    "declaringMethod": "uriTemplate",
+    "startPos": 905,
+    "endPos": 984
+  },
+  {
+    "url": "/data/{path}/simple",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withMatrixVariable",
+    "startPos": 1333,
+    "endPos": 1427
+  },
+  {
+    "url": "/class-mapping/*/method",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byMethod",
+    "startPos": 793,
+    "endPos": 881
+  },
+  {
+    "url": "/convert/date/{value}",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.convert.ConvertController",
+    "declaringMethod": "date",
+    "startPos": 786,
+    "endPos": 847
+  },
+  {
+    "url": "/data/custom",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.custom.CustomArgumentController",
+    "declaringMethod": "custom",
+    "startPos": 579,
+    "endPos": 672
+  },
+  {
+    "url": "/response/entity/status",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.response.ResponseController",
+    "declaringMethod": "responseEntityStatusCode",
+    "startPos": 1130,
+    "endPos": 1195
+  },
+  {
+    "url": "/messageconverters/rss",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.messageconverters.MessageConvertersController",
+    "declaringMethod": "writeChannel",
+    "startPos": 3262,
+    "endPos": 3348
+  },
+  {
+    "url": "/fileupload/",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.fileupload.FileUploadController",
+    "declaringMethod": "processUpload",
+    "startPos": 906,
+    "endPos": 962
+  },
+  {
+    "url": "/convert/primitive",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.convert.ConvertController",
+    "declaringMethod": "primitive",
+    "startPos": 601,
+    "endPos": 659
+  },
+  {
+    "url": "/data/{path1}/{path2}",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withMatrixVariablesMultiple",
+    "startPos": 1596,
+    "endPos": 1692
+  },
+  {
+    "url": "/messageconverters/atom",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.messageconverters.MessageConvertersController",
+    "declaringMethod": "writeFeed",
+    "startPos": 2779,
+    "endPos": 2863
+  },
+  {
+    "url": "/response/entity/headers",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.response.ResponseController",
+    "declaringMethod": "responseEntityCustomHeaders",
+    "startPos": 1359,
+    "endPos": 1425
+  },
+  {
+    "url": "/data/standard/response/os",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.standard.StandardArgumentsController",
+    "declaringMethod": "availableStandardResponseArguments",
+    "startPos": 2099,
+    "endPos": 2158
+  },
+  {
+    "url": "/class-mapping/*/consumes",
+    "consumes": [
+      "application/json"
+    ],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byConsumes",
+    "startPos": 1710,
+    "endPos": 1830
+  },
+  {
+    "url": "/class-mapping/*/parameter",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byParameterNegation",
+    "startPos": 1128,
+    "endPos": 1234
+  },
+  {
+    "url": "/data/entity",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withEntity",
+    "startPos": 2645,
+    "endPos": 2733
+  },
+  {
+    "url": "/form/",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.form.FormController",
+    "declaringMethod": "processSubmit",
+    "startPos": 1255,
+    "endPos": 1313
+  },
+  {
+    "url": "/convert/bean",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.convert.ConvertController",
+    "declaringMethod": "bean",
+    "startPos": 1330,
+    "endPos": 1383
+  },
+  {
+    "url": "/convert/value",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.convert.ConvertController",
+    "declaringMethod": "valueObject",
+    "startPos": 1440,
+    "endPos": 1494
+  },
+  {
+    "url": "/mapping/path",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.MappingController",
+    "declaringMethod": "byPath",
+    "startPos": 484,
+    "endPos": 546
+  },
+  {
+    "url": "/data/group",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withParamGroup",
+    "startPos": 963,
+    "endPos": 1049
+  },
+  {
+    "url": "/async/callable/response-body",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.CallableController",
+    "declaringMethod": "callable",
+    "startPos": 576,
+    "endPos": 649
+  },
+  {
+    "url": "/views/*/dataBinding/{foo}/{fruit}",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.views.ViewsController",
+    "declaringMethod": "dataBinding",
+    "startPos": 1137,
+    "endPos": 1229
+  },
+  {
+    "url": "/data/param",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withParam",
+    "startPos": 771,
+    "endPos": 857
+  },
+  {
+    "url": "/global-exception",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.exceptions.ExceptionController",
+    "declaringMethod": "businessException",
+    "startPos": 465,
+    "endPos": 531
+  },
+  {
+    "url": "/async/callable/view",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.CallableController",
+    "declaringMethod": "callableWithView",
+    "startPos": 822,
+    "endPos": 872
+  },
+  {
+    "url": "/data/standard/response/writer",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.standard.StandardArgumentsController",
+    "declaringMethod": "availableStandardResponseArguments",
+    "startPos": 1891,
+    "endPos": 1954
+  },
+  {
+    "url": "/async/deferred-result/timeout-value",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.DeferredResultController",
+    "declaringMethod": "deferredResultWithTimeoutValue",
+    "startPos": 1708,
+    "endPos": 1803
+  },
+  {
+    "url": "/mapping/parameter",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.MappingController",
+    "declaringMethod": "byParameterNegation",
+    "startPos": 1157,
+    "endPos": 1271
+  },
+  {
+    "url": "/data/standard/request/is",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.standard.StandardArgumentsController",
+    "declaringMethod": "requestReader",
+    "startPos": 1442,
+    "endPos": 1549
+  },
+  {
+    "url": "/mapping/path/*",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.MappingController",
+    "declaringMethod": "byPathPattern",
+    "startPos": 590,
+    "endPos": 686
+  },
+  {
+    "url": "/messageconverters/json",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.messageconverters.MessageConvertersController",
+    "declaringMethod": "writeJson",
+    "startPos": 2371,
+    "endPos": 2459
+  },
+  {
+    "url": "/data/cookie",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withCookie",
+    "startPos": 2256,
+    "endPos": 2343
+  },
+  {
+    "name": "appServlet",
+    "url": "/",
+    "declaringClass": "org.springframework.web.servlet.DispatcherServlet",
+    "startPos": 0,
+    "endPos": 0
+  },
+  {
+    "url": "/redirect/uriComponentsBuilder",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.redirect.RedirectController",
+    "declaringMethod": "uriComponentsBuilder",
+    "startPos": 1262,
+    "endPos": 1350
+  },
+  {
+    "url": "/data/standard/response",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.standard.StandardArgumentsController",
+    "declaringMethod": "response",
+    "startPos": 1738,
+    "endPos": 1810
+  },
+  {
+    "url": "/class-mapping/*/notheader",
+    "consumes": [],
+    "headers": [
+      "!FooHeader"
+    ],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byHeaderNegation",
+    "startPos": 1513,
+    "endPos": 1626
+  },
+  {
+    "url": "/class-mapping/*/header",
+    "consumes": [],
+    "headers": [
+      "FooHeader\u003dfoo"
+    ],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byHeader",
+    "startPos": 1324,
+    "endPos": 1437
+  },
+  {
+    "url": "/views/*/pathVariables/{foo}/{fruit}",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.views.ViewsController",
+    "declaringMethod": "pathVars",
+    "startPos": 829,
+    "endPos": 923
+  },
+  {
+    "url": "/response/annotation",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.response.ResponseController",
+    "declaringMethod": "responseBody",
+    "startPos": 577,
+    "endPos": 637
+  },
+  {
+    "url": "/views/*/viewName",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.views.ViewsController",
+    "declaringMethod": "usingRequestToViewNameTranslator",
+    "startPos": 626,
+    "endPos": 700
+  },
+  {
+    "url": "/data/body",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "POST"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withBody",
+    "startPos": 2470,
+    "endPos": 2556
+  },
+  {
+    "url": "/async/deferred-result/exception",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.DeferredResultController",
+    "declaringMethod": "deferredResultWithException",
+    "startPos": 1464,
+    "endPos": 1555
+  },
+  {
+    "url": "/mapping/method",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.MappingController",
+    "declaringMethod": "byMethod",
+    "startPos": 806,
+    "endPos": 902
+  },
+  {
+    "url": "/async/deferred-result/model-and-view",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.DeferredResultController",
+    "declaringMethod": "deferredResultWithView",
+    "startPos": 1222,
+    "endPos": 1310
+  },
+  {
+    "url": "/data/header",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.data.RequestDataController",
+    "declaringMethod": "withHeader",
+    "startPos": 2067,
+    "endPos": 2154
+  },
+  {
+    "url": "/async/callable/custom-timeout-handling",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.CallableController",
+    "declaringMethod": "callableWithCustomTimeoutHandling",
+    "startPos": 1652,
+    "endPos": 1739
+  },
+  {
+    "url": "/class-mapping/*/path",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.mapping.ClasslevelMappingController",
+    "declaringMethod": "byPath",
+    "startPos": 487,
+    "endPos": 541
+  },
+  {
+    "url": "/convert/formattedCollection",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.convert.ConvertController",
+    "declaringMethod": "formattedCollection",
+    "startPos": 1113,
+    "endPos": 1181
+  },
+  {
+    "url": "/async/callable/exception",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.async.CallableController",
+    "declaringMethod": "callableWithException",
+    "startPos": 1145,
+    "endPos": 1214
+  },
+  {
+    "url": "/messageconverters/string",
+    "consumes": [],
+    "headers": [],
+    "methods": [
+      "GET"
+    ],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.messageconverters.MessageConvertersController",
+    "declaringMethod": "writeString",
+    "startPos": 942,
+    "endPos": 1030
+  },
+  {
+    "url": "/convert/collection",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.convert.ConvertController",
+    "declaringMethod": "collection",
+    "startPos": 951,
+    "endPos": 1010
+  },
+  {
+    "url": "/simple",
+    "consumes": [],
+    "headers": [],
+    "methods": [],
+    "produces": [],
+    "parameters": [],
+    "declaringClass": "org.springframework.samples.mvc.simple.SimpleController",
+    "declaringMethod": "simple",
+    "startPos": 270,
+    "endPos": 326
+  }
+]

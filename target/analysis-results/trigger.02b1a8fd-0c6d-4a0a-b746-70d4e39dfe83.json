@@ -1,0 +1,29 @@
+{
+  "boundParams": [
+    "DIGEST_AUTH",
+    "FORM_AUTH",
+    "fruit",
+    "foo",
+    "CLIENT_CERT_AUTH",
+    "BASIC_AUTH"
+  ],
+  "allowedParams": [],
+  "disallowedParams": [],
+  "missingParams": [],
+  "initBinder": false,
+  "controllerclass": "MappingController",
+  "requestHandlerSignatures": [
+    "byParameterNegation()",
+    "byConsumes(@RequestBody()JavaBean javaBean)",
+    "byHeader()",
+    "byHeaderNegation()",
+    "byProducesJson()",
+    "byParameter()",
+    "byPath()",
+    "byPathPattern(HttpServletRequest request)",
+    "byMethod()",
+    "byProducesXml()"
+  ],
+  "category": "ROUTE",
+  "id": "02b1a8fd-0c6d-4a0a-b746-70d4e39dfe83"
+}

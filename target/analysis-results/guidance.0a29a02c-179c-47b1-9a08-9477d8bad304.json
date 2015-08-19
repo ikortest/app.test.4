@@ -1,0 +1,34 @@
+{
+  "id": "0a29a02c-179c-47b1-9a08-9477d8bad304",
+  "trigger": "c6bd46ed-6d10-4de1-aa63-28abfd9b9f17",
+  "category": "ROUTE",
+  "event": {
+    "boundParams": [
+      "file"
+    ],
+    "allowedParams": [],
+    "disallowedParams": [],
+    "missingParams": [],
+    "initBinder": false,
+    "controllerclass": "FileUploadController",
+    "requestHandlerSignatures": [
+      "fileUploadForm()",
+      "processUpload(@RequestParam()MultipartFile file,Model model)"
+    ],
+    "category": "ROUTE",
+    "id": "c6bd46ed-6d10-4de1-aa63-28abfd9b9f17"
+  },
+  "evidence": "# Create a Spring @InitBinder Method\n\nOur analysis determined that the `@InitBinder` method for `FileUploadController` was not present, resulting in the ability for\nparameters passed on the Request to the `@RequestHandler` to override parameters that may not otherwise be exposed. We\nhave analyzed the the code and found the following parameters to be exposed to the request currently through Spring\u0027s\nauto-binding:\n\n    * file\n\nFor additional context, we discovered the following `@RequestHandler` methods in this controller that accept parameters\nfrom the request.\n\n    * `fileUploadForm()`\n    * `processUpload(@RequestParam()MultipartFile file,Model model)`\n\nUse our sandbox below to fine-tune which parameters you would like to explicitly allow to be set. Anything explicitly\npassed to the `setAllowedFields` method will be _whitelisted_ for inclusion while any parameter that is excluded will\nbe considered a read-only attribute and the value will not be set when Spring performs auto-binding.\n",
+  "advice": [
+    {
+      "sandboxModel": {
+        "boundParams": [
+          "file"
+        ]
+      },
+      "file": "/Users/cschmidt/IdeaProjects/lofting.poc.java.analyzer/test/app.test.4/src/main/java/org/springframework/samples/mvc/fileupload/FileUploadController.java",
+      "content": "\n\r    /**\n\r     * Added by Codiscope {{product}} on {{date}}\n\r     *\n\r     * @GuidanceID({{guidance.id}})\n\r     *\n\r     * Whitelist the properties that can be auto-bound to parameters and fields\n\r     **************************************************************************/\n\r    @InitBinder\n\r    public void initBinder(org.springframework.validation.DataBinder dataBinder) {\n\r        dataBinder.setAllowedFields({{#allowedFields}}\"{{field}}\"{{^last}},{{/last}}{{/allowedFields}});\n\r    }\n\r",
+      "type": "SandboxAdvice"
+    }
+  ]
+}

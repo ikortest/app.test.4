@@ -1,0 +1,54 @@
+{
+  "id": "88b99df0-3247-49fe-ad0c-5b53f55b6519",
+  "trigger": "fd3a5e6c-31c5-4b42-aefd-ea94f8824c94",
+  "category": "ROUTE",
+  "event": {
+    "boundParams": [
+      "inquiry",
+      "phone",
+      "subscribeNewsletter",
+      "inquiryDetails",
+      "additionalInfo",
+      "name",
+      "MODEL_KEY_PREFIX",
+      "currency",
+      "percent",
+      "birthDate",
+      "age"
+    ],
+    "allowedParams": [],
+    "disallowedParams": [],
+    "missingParams": [],
+    "initBinder": false,
+    "controllerclass": "FormController",
+    "requestHandlerSignatures": [
+      "processSubmit(@Valid()FormBean formBean,BindingResult result,@ModelAttribute(value \u003d \"ajaxRequest\")boolean ajaxRequest,Model model,RedirectAttributes redirectAttrs)",
+      "form()"
+    ],
+    "category": "ROUTE",
+    "id": "fd3a5e6c-31c5-4b42-aefd-ea94f8824c94"
+  },
+  "evidence": "# Create a Spring @InitBinder Method\n\nOur analysis determined that the `@InitBinder` method for `FormController` was not present, resulting in the ability for\nparameters passed on the Request to the `@RequestHandler` to override parameters that may not otherwise be exposed. We\nhave analyzed the the code and found the following parameters to be exposed to the request currently through Spring\u0027s\nauto-binding:\n\n    * inquiry\n    * phone\n    * subscribeNewsletter\n    * inquiryDetails\n    * additionalInfo\n    * name\n    * MODEL_KEY_PREFIX\n    * currency\n    * percent\n    * birthDate\n    * age\n\nFor additional context, we discovered the following `@RequestHandler` methods in this controller that accept parameters\nfrom the request.\n\n    * `processSubmit(@Valid()FormBean formBean,BindingResult result,@ModelAttribute(value \u003d \u0026quot;ajaxRequest\u0026quot;)boolean ajaxRequest,Model model,RedirectAttributes redirectAttrs)`\n    * `form()`\n\nUse our sandbox below to fine-tune which parameters you would like to explicitly allow to be set. Anything explicitly\npassed to the `setAllowedFields` method will be _whitelisted_ for inclusion while any parameter that is excluded will\nbe considered a read-only attribute and the value will not be set when Spring performs auto-binding.\n",
+  "advice": [
+    {
+      "sandboxModel": {
+        "boundParams": [
+          "inquiry",
+          "phone",
+          "subscribeNewsletter",
+          "inquiryDetails",
+          "additionalInfo",
+          "name",
+          "MODEL_KEY_PREFIX",
+          "currency",
+          "percent",
+          "birthDate",
+          "age"
+        ]
+      },
+      "file": "/Users/cschmidt/IdeaProjects/lofting.poc.java.analyzer/test/app.test.4/src/main/java/org/springframework/samples/mvc/form/FormController.java",
+      "content": "\n\r    /**\n\r     * Added by Codiscope {{product}} on {{date}}\n\r     *\n\r     * @GuidanceID({{guidance.id}})\n\r     *\n\r     * Whitelist the properties that can be auto-bound to parameters and fields\n\r     **************************************************************************/\n\r    @InitBinder\n\r    public void initBinder(org.springframework.validation.DataBinder dataBinder) {\n\r        dataBinder.setAllowedFields({{#allowedFields}}\"{{field}}\"{{^last}},{{/last}}{{/allowedFields}});\n\r    }\n\r",
+      "type": "SandboxAdvice"
+    }
+  ]
+}

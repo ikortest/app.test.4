@@ -1,0 +1,18 @@
+{
+  "boundParams": [
+    "handled"
+  ],
+  "allowedParams": [],
+  "disallowedParams": [],
+  "missingParams": [],
+  "initBinder": false,
+  "controllerclass": "CallableController",
+  "requestHandlerSignatures": [
+    "callableWithView(final Model model)",
+    "callableWithException(@RequestParam(required \u003d false, defaultValue \u003d \"true\")final boolean handled)",
+    "callable()",
+    "callableWithCustomTimeoutHandling()"
+  ],
+  "category": "ROUTE",
+  "id": "1971ac93-a286-45c2-bf91-c03e35be9753"
+}

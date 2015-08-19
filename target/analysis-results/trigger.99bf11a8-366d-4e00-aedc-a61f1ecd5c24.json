@@ -1,0 +1,17 @@
+{
+  "boundParams": [
+    "date",
+    "number",
+    "MODEL_KEY_PREFIX"
+  ],
+  "allowedParams": [],
+  "disallowedParams": [],
+  "missingParams": [],
+  "initBinder": false,
+  "controllerclass": "ValidationController",
+  "requestHandlerSignatures": [
+    "validate(@Valid()JavaBean bean,BindingResult result)"
+  ],
+  "category": "ROUTE",
+  "id": "99bf11a8-366d-4e00-aedc-a61f1ecd5c24"
+}

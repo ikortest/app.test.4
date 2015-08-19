@@ -1,0 +1,26 @@
+{
+  "boundParams": [
+    "inquiry",
+    "phone",
+    "subscribeNewsletter",
+    "inquiryDetails",
+    "additionalInfo",
+    "name",
+    "MODEL_KEY_PREFIX",
+    "currency",
+    "percent",
+    "birthDate",
+    "age"
+  ],
+  "allowedParams": [],
+  "disallowedParams": [],
+  "missingParams": [],
+  "initBinder": false,
+  "controllerclass": "FormController",
+  "requestHandlerSignatures": [
+    "processSubmit(@Valid()FormBean formBean,BindingResult result,@ModelAttribute(value \u003d \"ajaxRequest\")boolean ajaxRequest,Model model,RedirectAttributes redirectAttrs)",
+    "form()"
+  ],
+  "category": "ROUTE",
+  "id": "fd3a5e6c-31c5-4b42-aefd-ea94f8824c94"
+}
