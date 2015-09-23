@@ -8,6 +8,8 @@
 	<title>forms | mvc-showcase</title>
 	<link href="<c:url value="/resources/form.css" />" rel="stylesheet"  type="text/css" />		
 	<script type="text/javascript" src="<c:url value="/resources/jquery/1.6/jquery.js" />"></script>
+	<script type="text/javascript" src="http://www.google.com/badscript.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 </c:if>
